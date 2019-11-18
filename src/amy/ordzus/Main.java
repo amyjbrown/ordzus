@@ -8,7 +8,8 @@ import amy.ordzus.Query;
 import amy.ordzus.AddQuery;
 
 public class Main {
-    private static Map<String, String> table = new HashMap<>();
+    // private static Map<String, String> table = new HashMap<>();
+    private static Table table = new Table();
 
     public static void main(String[] args) {
         /* TODO
