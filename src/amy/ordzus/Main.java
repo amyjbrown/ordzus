@@ -25,10 +25,12 @@ public class Main {
             exampleList.add(new AddQuery("2", "qux"));
             exampleList.add(new AddQuery("3", "waz"));
             exampleList.add(new AddQuery("4", "mav"));
+            exampleList.add(new AddQuery("5", "jaku"));
         }
 
         for (Query q: exampleList) {
             q.apply(table);
+            System.out.println(table);
         }
 
         System.out.println(table.toString());

@@ -10,7 +10,7 @@ public class AddQuery implements Query {
         this.value = value;
     }
 
-    public void apply(Map<String, String> map) {
-        map.put(this.name, this.value);
+    public void apply(Table table) {
+        table.add(name, value);
     }
 }

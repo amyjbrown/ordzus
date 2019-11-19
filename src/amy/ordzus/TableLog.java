@@ -13,5 +13,17 @@ public class TableLog {
         this.modified = LocalDateTime.now();
     }
 
-    // TODO add to string for outputting
+    public String toString() {
+        StringBuilder sb = new StringBuilder("");
+        if (map.toString().length() <= 20) {
+            sb.append(map);
+        } else {
+            sb.append(map.toString().substring(0,20));
+            sb.append("...}");
+        }
+        // Now Add modified time
+        sb.append(" @"); sb.append(modified);
+
+        return sb.toString();
+    }
 }
